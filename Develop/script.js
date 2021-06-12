@@ -1,10 +1,17 @@
 var generateBtn = document.querySelector("#generate");
+// document.getElementById("gennerate").innerHTML = "hello world";
 
 
+var abcUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var abcUpperArr = abcUpper.split("");
+var abcLower = "abcdefghijklmnopqrstuvwxyz";
+var abcLowerArr = abcLower.split("");
+var num = "0123456789";
+var numArr = num.split("");
+var sym = "!#$%&\()*+,-./:;<=>?@^[\\]^_`{|}~";
+var symArr = sym.split("");
 
-var uppercaseChar = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
-var lowercaseChar = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
-var numberChar = [0,1,2,3,4,5,6,7,8,9];
+
 
 // Assignment code here
 
@@ -19,7 +26,7 @@ var numberChar = [0,1,2,3,4,5,6,7,8,9];
   // When prompt is answered, password is generated.
   // displayed as alert or written to the page.
 
-var 
+ 
 
 
 // Write password to the #password input
