@@ -1,45 +1,26 @@
-var generateBtn = document.querySelector("#generate");
-// document.getElementById("gennerate").innerHTML = "hello world";
-
-
-var abcUpper = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-var abcUpperArr = abcUpper.split("");
-var abcLower = "abcdefghijklmnopqrstuvwxyz";
-var abcLowerArr = abcLower.split("");
+// Set static variables
+  
+var upperChar = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var upperCharArr = upperChar.split("");
+var lowerChar = "abcdefghijklmnopqrstuvwxyz";
+var lowerCharArr = lowerChar.split("");
 var num = "0123456789";
 var numArr = num.split("");
-var sym = "!#$%&\()*+,-./:;<=>?@^[\\]^_`{|}~";
-var symArr = sym.split("");
+var symbol = "!#$%&\()*+,-./:;<=>?@^[\\]^_`{|}~";
+var symbolArr = symbol.split("");
 
+// Main function = Password Generation
 
+function generatePass(){
+ var allChars = [];
+ var resultPass = "";
 
-// Assignment code here
+// Set dynamic variables
 
-// Psuedo Code:
-  // Add event listener to click button
-  // once buttom in clicked, I am presented with prompts
-  // Prompt 1: character length
-  // Prompt 2: lowercase
-  // Prompt 3: uppercase
-  // Prompt 4: numeric
-  // Prompt 5 special characters
-  // When prompt is answered, password is generated.
-  // displayed as alert or written to the page.
+ var Totlength = prompt("How many characters would you like your password to be?");
 
- 
-
-
-// Write password to the #password input
-function writePassword() {
-  var password = generatePassword();
-  var passwordText = document.querySelector("#password");
-
-  passwordText.value = password;
+ if(Totlength <8 || Totlength > 128){
+     alert("It is recommended to have a password between 8 and 128 characters long!\nPlease start over.");
+ }
 
 }
-
-// Add event listener to generate button
-generateBtn.addEventListener("click", writePassword);
-
-
-
