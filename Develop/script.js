@@ -20,7 +20,7 @@ function generatePass(){
  var Totlength = prompt("How many characters would you like your password to be?");
 
  if(Totlength <8 || Totlength > 128){
-     alert("It is recommended to have a password between 8 and 128 characters long!\nPlease start over.");
+     alert("Your password must be between 8 and 128 characters!\nPlease start over.");
  }
 
 // Confirm the rest of character conditions
